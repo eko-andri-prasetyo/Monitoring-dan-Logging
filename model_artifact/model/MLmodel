@@ -1,0 +1,31 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.0
+mlflow_version: 2.19.0
+model_size_bytes: 21455246
+model_uuid: d3fd637872e44d68a3634a05855a9de4
+run_id: e62a3c7b79ff4917b875b53f82e4665e
+signature:
+  inputs: '[{"type": "double", "name": "age", "required": true}, {"type": "double",
+    "name": "monthly_income", "required": true}, {"type": "double", "name": "loan_amount",
+    "required": true}, {"type": "double", "name": "tenure_months", "required": true},
+    {"type": "double", "name": "num_credit_lines", "required": true}, {"type": "string",
+    "name": "job_type", "required": true}, {"type": "string", "name": "education_level",
+    "required": true}, {"type": "string", "name": "city", "required": true}, {"type":
+    "string", "name": "marital_status", "required": true}, {"type": "double", "name":
+    "has_previous_default", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int32", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2026-01-03 23:39:07.493678'
